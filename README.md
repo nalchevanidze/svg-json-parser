@@ -19,7 +19,7 @@ svgParser.parse(document.querySelector('#svglib'));
 
 ```
 
-<p>for JSON </p>
+<h6>for JSON </h6>
 ```html
 
 svgParser.json(document.querySelector('#svglib'));
