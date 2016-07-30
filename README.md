@@ -17,26 +17,6 @@ if you use method lib returns;
 ```html
 <h2>Example of code</h2>
 
-<pre>
-    <div class="container">
-        <div class="block two first">
-            <h2>Your title</h2>
-            <div class="wrap">
-            //Your content
-            </div>
-        </div>
-    </div>
-</pre>
-```
-
-
-<pre>
-<code>
-
-
-
-
-
 "<svg id="svglib" >
 <g id="work">
   <path d="M10 10h20v20H10V10zm30" />
@@ -59,7 +39,6 @@ var svgjson = svg.lib(document.querySelector('#svglib'));
 "mobile":{"node":"path","id":"mobile","d":"M10 10h20v20H10V10z"}
 }
 
-</code>
-</pre>
 
+```
 
