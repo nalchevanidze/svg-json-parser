@@ -23,7 +23,9 @@ if you use method lib returns;
 <path id="gmail" d="M10 10h20v20H10V10zm30"/>
 <path id="mobile" d="M10 10h20v20H10V10zm30"/>
 </svg>
+</PRE>
 
+<code>
 
 var svgjson = svg.lib(document.querySelector('#svglib'));
 {
@@ -35,4 +37,6 @@ var svgjson = svg.lib(document.querySelector('#svglib'));
 "mobile":{"node":"path","id":"mobile","d":"M10 10h20v20H10V10z"}
 }
 
-<PRE>
+</code>
+
+
