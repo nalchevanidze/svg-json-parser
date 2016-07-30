@@ -14,7 +14,7 @@ for JSON
 var svgjson = svg.json(document.querySelector('#svglib'));
 
 if you use method lib returns;
-<PRE>
+<pre>
 <code>
 
 "<h1> hello </h1>"
@@ -42,6 +42,6 @@ var svgjson = svg.lib(document.querySelector('#svglib'));
 }
 
 </code>
-</PRE>
+</pre>
 
 
