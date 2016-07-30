@@ -3,9 +3,8 @@
   Version: 0.6
   Valid Elements: defs,g,svg,symbol,circle,ellipse,line,path,polygon,polyline,rect
 */
-
-var SVGToJSON = new SVGJSONParser ();
 function SVGJSONParser (){
+  "use strict"
   var shapes = {
     path:["d"],
     polygon:["points"],
