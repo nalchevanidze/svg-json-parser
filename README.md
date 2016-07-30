@@ -21,7 +21,7 @@ svgParser.parse(document.querySelector('#svglib'));
 
 ```
 
-<h3>Valid elements that will be converterd:</h3>
+<h5 style="color:red;" >Valid elements:</h5>
 ```html
 
 Shape elements
