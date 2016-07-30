@@ -12,6 +12,13 @@ to parse SVG use function parse, returns javascriptObject;
 svgParser.parse(document.querySelector('#svglib'));
 
 ```
+<h5>converted Object</h5>
+```html
+
+{"node":"g",id:work,children:[{node:"path",d:"M10..",fill=".."},.....]}
+
+```
+
 for JSON 
 ```html
 
@@ -32,14 +39,6 @@ Structural elements
 <defs>, <g>, <svg>, <symbol>,<svg>
 
 ```
-
-<h3>converted Object will be look:</h3>
-```html
-
-{"work":{"node":"g", "id":"work","children":[{"node":"path","d":"M10 10h20v20H10V10z"},.....]}
-
-```
-
 if you use method lib returns;
 ```html
 <svg id="svglib">
