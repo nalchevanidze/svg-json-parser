@@ -1,8 +1,9 @@
-// Auhtor: David Nalchevanidze
-// Version: 0.6
-// Valide Shape elements || circle,ellipse,line,path,polygon,polyline,rect
-// Valide Structural elements || defs,g,svg,symbol
-//  It's really useful for React.
+/*
+  Auhtor: David Nalchevanidze
+  Version: 0.6
+  Valid Elements: defs,g,svg,symbol,circle,ellipse,line,path,polygon,polyline,rect
+*/
+
 var SVGToJSON = new SVGJSONParser ();
 function SVGJSONParser (){
   var shapes = {
