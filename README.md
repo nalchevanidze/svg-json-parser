@@ -18,7 +18,7 @@ if you use method lib returns;
 <code>
 
 
-${fn:escapeXml("<h1> hello </h1>")};
+${fn:escapeXml('<h1> hello </h1>')};
 
 
 "<svg id="svglib" >
