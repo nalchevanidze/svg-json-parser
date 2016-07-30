@@ -12,7 +12,7 @@ var svgParser = new SVGJSONParser();
 
 svgParser.parse(document.querySelector('#svglib'));
 
-// for json use: svg.json( .....
+// for json use: svgParser.json( .....
 
 ```
 <h6>converted Object</h6>
