@@ -15,22 +15,40 @@ var svgjson = svg.json(document.querySelector('#svglib'));
 
 if you use method lib returns;
 ```html
-<svg id="svglib" >
-<g id="work">
-  <path d="M10 10h20v20H10V10zm30" />
-  <path d="M10 10h20v20H10V10zm30" />
-</g>
-<path id="gmail" d="M10 10h20v20H10V10zm30"/>
-<path id="mobile" d="M10 10h20v20H10V10zm30"/>
+<svg id="svglib">
+    <g id="work">
+        <path d="M10 10h20v20H10V10zm30" />
+        <path d="M10 10h20v20H10V10zm30" />
+    </g>
+    <path id="gmail" d="M10 10h20v20H10V10zm30" />
+    <path id="mobile" d="M10 10h20v20H10V10zm30" />
 </svg>
 
-var svgjson = svg.lib(document.querySelector('#svglib'));
-{
-"work":{"node":"g","id":"work","children":[
-  {"node":"path","d":"M10 10h20v20H10V10z"},
-  {"node":"path","d":"M10 10h20v20H10V10z"}
-]},
-"gmail":{"node":"path","id":"gmail","d":"M10 10h20v20H10V10z"},
-"mobile":{"node":"path","id":"mobile","d":"M10 10h20v20H10V10z"}
+var svglib = svg.lib(document.querySelector('#svglib'));
+{  
+  "work":{  
+    "node":"g",
+    "id":"work",
+    "children":[  
+      {  
+        "node":"path",
+        "d":"M10 10h20v20H10V10z"
+      },
+      {  
+        "node":"path",
+        "d":"M10 10h20v20H10V10z"
+      }
+    ]
+  },
+  "gmail":{  
+    "node":"path",
+    "id":"gmail",
+    "d":"M10 10h20v20H10V10z"
+  },
+  "mobile":{  
+    "node":"path",
+    "id":"mobile",
+    "d":"M10 10h20v20H10V10z"
+  }
 }
 ```
