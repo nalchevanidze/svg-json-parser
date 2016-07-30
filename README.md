@@ -37,9 +37,11 @@ Shape: <circle>, <ellipse>, <line>, <path>, <polygon>, <polyline>, <rect>
 Structural: <defs>, <g>, <svg>, <symbol>,<svg>
 
 ```
-if you use method lib returns;
+lib method returns svg elements not as Array as propertys of main object, will be included only this element that has id's;
+
 ```html
 <svg id="svglib">
+  // it not, no id  <path  d="M0..." />
     <g id="work">
         <path d="M0..." />
         <path d="M0..." />
@@ -51,18 +53,18 @@ if you use method lib returns;
 var svglib = svgParser.lib(document.querySelector('#svglib'));
 
 {  
-  "work":{  
-    "node":"g",
-    "id":"work",
-    "children":[  
+  work:{  
+    node:"g",
+    id:"work",
+    children:[  
       {"node":"path","d":"M0..."},
       {"node":"path","d":"M0..."}
     ]
   },
-  "gmail":{  
-    "node":"path",
-    "id":"gmail",
-    "d":"M10..."
+  gmail:{  
+    node:"path",
+    id:"gmail",
+    d:"M10..."
   },.....
 }
 ```
