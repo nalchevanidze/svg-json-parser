@@ -16,14 +16,15 @@ var svgjson = svg.json(document.querySelector('#svglib'));
 if you use method lib returns;
 <PRE>
 <code>
-<svg id="svglib" >
+
+'<svg id="svglib" >
 <g id="work">
   <path d="M10 10h20v20H10V10zm30" />
   <path d="M10 10h20v20H10V10zm30" />
 </g>
 <path id="gmail" d="M10 10h20v20H10V10zm30"/>
 <path id="mobile" d="M10 10h20v20H10V10zm30"/>
-</svg>
+</svg>'
 
 
 
