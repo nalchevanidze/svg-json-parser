@@ -1,7 +1,7 @@
 /*
   Auhtor: David Nalchevanidze
   Version: 0.6
-  Valid Elements: defs,g,svg,symbol,circle,ellipse,line,path,polygon,polyline,rect
+  Valid Elements: defs, g, svg, symbol, circle, ellipse, line, path, polygon, polyline, rect
 */
 function SVGJSONParser (){
   "use strict"
