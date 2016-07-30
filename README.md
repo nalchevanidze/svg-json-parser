@@ -75,9 +75,11 @@ you can use lib object in react:
 ```html
 
 var Icon = React.createClass({render(){
-  var sv = svglib[this.props.id];
-  if(sv.node=="g"){return (<g >{sv.children.map(function(e,i){ return(<path  d={e.d} fill={e.fill} key={i} ></path>);})}</g>);}
-  else if(sv.node=="path"){return(<path  d={sv.d} fill={sv.fill}></path>);}
+  var s = svglib[this.props.id];
+  if(s.node=="g"){return (<g >{sv.children.map((e,i)=>
+    <path  d={e.d} fill={e.fill} key={i} ></path>
+  )}</g>);}
+  else if(s.node=="path"){return(<path  d={s.d} fill={s.fill}></path>);}
 }});
 
 <icon id='work' />
