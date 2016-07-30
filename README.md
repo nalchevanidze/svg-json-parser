@@ -43,33 +43,28 @@ if you use method lib returns;
 ```html
 <svg id="svglib">
     <g id="work">
-        <path d="M10 10h20v20H10V10zm30" />
-        <path d="M10 10h20v20H10V10zm30" />
+        <path d="M0..." />
+        <path d="M0..." />
     </g>
-    <path id="gmail" d="M10 10h20v20H10V10zm30" />
-    <path id="mobile" d="M10 10h20v20H10V10zm30" />
+    <path id="gmail" d="M0..." />
+    .......
 </svg>
-<script>
+
 var svglib = svgParser.lib(document.querySelector('#svglib'));
-</script>
+
 {  
   "work":{  
     "node":"g",
     "id":"work",
     "children":[  
-      {"node":"path","d":"M10 10h20v20H10V10z"},
-      {"node":"path","d":"M10 10h20v20H10V10z"}
+      {"node":"path","d":"M0..."},
+      {"node":"path","d":"M0..."}
     ]
   },
   "gmail":{  
     "node":"path",
     "id":"gmail",
-    "d":"M10 10h20v20H10V10z"
-  },
-  "mobile":{  
-    "node":"path",
-    "id":"mobile",
-    "d":"M10 10h20v20H10V10z"
-  }
+    "d":"M10..."
+  },.....
 }
 ```
