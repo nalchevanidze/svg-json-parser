@@ -30,14 +30,8 @@ var svglib = svg.lib(document.querySelector('#svglib'));
     "node":"g",
     "id":"work",
     "children":[  
-      {  
-        "node":"path",
-        "d":"M10 10h20v20H10V10z"
-      },
-      {  
-        "node":"path",
-        "d":"M10 10h20v20H10V10z"
-      }
+      {"node":"path","d":"M10 10h20v20H10V10z"},
+      {"node":"path","d":"M10 10h20v20H10V10z"}
     ]
   },
   "gmail":{  
