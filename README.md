@@ -52,7 +52,7 @@ returns SVG elements as the properties of the object, will be included only elem
     .......
 </svg>
 
-var svglib = svgParser.lib(document.querySelector('#svglib'));
+var  = svgParser.lib(document.querySelector('#svglib'));
 
 {  
   work:{  
@@ -69,4 +69,19 @@ var svglib = svgParser.lib(document.querySelector('#svglib'));
     d:"M10..."
   },.....
 }
+```
+you can use lib object in react:
+
+```html
+
+var Icon = React.createClass({render(){
+  var sv = svgskills[this.props.id];
+  if(sv.node=="g"){return (<g >{sv.children.map(function(e,i){ return(<path  d={e.d} fill={e.fill} key={i} ></path>);})}</g>);}
+  else if(sv.node=="path"){return(<path  d={sv.d} fill={sv.fill}></path>);}
+}})
+
+
+}})
+
+
 ```
