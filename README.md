@@ -17,6 +17,11 @@ if you use method lib returns;
 <pre>
 <code>
 
+<![CDATA[
+This is a demo, tags like <p> will
+appear literally.
+]]>
+
 "<h1> hello </h1>"
 
 "<svg id="svglib" >
