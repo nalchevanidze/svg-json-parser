@@ -13,14 +13,16 @@ for JSON
 
 var svgjson = svg.json(document.querySelector('#svglib'));
 
-if you use method lib returns;
-<pre>
-<code>
-
 <![CDATA[
 This is a demo, tags like <p> will
 appear literally.
 ]]>
+
+if you use method lib returns;
+<pre>
+<code>
+
+
 
 "<h1> hello </h1>"
 
