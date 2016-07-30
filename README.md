@@ -19,6 +19,21 @@ svgParser.json(document.querySelector('#svglib'));
 
 ```
 
+Valid elements that will be converterd:
+
+```html
+
+Shape elements
+---------------------------
+<circle>, <ellipse>, <line>, <path>, <polygon>, <polyline>, <rect>
+
+Structural elements
+
+<defs>, <g>, <svg>, <symbol>,<svg>
+
+
+```
+
 if you use method lib returns;
 ```html
 <svg id="svglib">
