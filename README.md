@@ -18,7 +18,7 @@ svgParser.parse(document.querySelector('#svglib'));
 <h6>converted Object</h6>
 ```html
 
-{"node":"g",id:work,children:[{node:"path",d:"M10..",fill=".."},.....]}
+{"node":"svg",id:svglib,children:[ {"node":"g",id:apple,children:[{node:"path",d:"M10..",fill=".."},.....]},.....]}
 
 ```
 
