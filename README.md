@@ -14,10 +14,6 @@ for JSON
 var svgjson = svg.json(document.querySelector('#svglib'));
 
 if you use method lib returns;
-<pre>
-<code>
-
-
 ```html
 <h2>Example of code</h2>
 
@@ -32,6 +28,13 @@ if you use method lib returns;
     </div>
 </pre>
 ```
+
+
+<pre>
+<code>
+
+
+
 
 
 "<svg id="svglib" >
