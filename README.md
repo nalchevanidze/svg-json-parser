@@ -13,18 +13,13 @@ for JSON
 
 var svgjson = svg.json(document.querySelector('#svglib'));
 
-<pre><![CDATA[
-This is a demo, tags like <p> will
-appear literally.
-]]></pre>
-
 if you use method lib returns;
 <pre>
 <code>
 
 
+${fn:escapeXml("<h1> hello </h1>")};
 
-"<h1> hello </h1>"
 
 "<svg id="svglib" >
 <g id="work">
