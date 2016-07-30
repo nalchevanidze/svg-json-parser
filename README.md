@@ -19,8 +19,8 @@ svgParser.json(document.querySelector('#svglib'));
 
 ```
 
-Valid elements that will be converterd:
 
+<h3>Valid elements that will be converterd:</h3>
 ```html
 
 Shape elements
@@ -28,12 +28,12 @@ Shape elements
 <circle>, <ellipse>, <line>, <path>, <polygon>, <polyline>, <rect>
 
 Structural elements
-
+----------------------------
 <defs>, <g>, <svg>, <symbol>,<svg>
 
 ```
 
-<h3>converted Object will be look:<h3>
+<h3>converted Object will be look:</h3>
 ```html
 
 {"work":{"node":"g", "id":"work","children":[{"node":"path","d":"M10 10h20v20H10V10z"},.....]}
