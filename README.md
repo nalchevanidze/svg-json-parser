@@ -31,6 +31,12 @@ Structural elements
 
 <defs>, <g>, <svg>, <symbol>,<svg>
 
+```
+
+<h3>converted Object will be look:<h3>
+```html
+
+{"work":{"node":"g", "id":"work","children":[{"node":"path","d":"M10 10h20v20H10V10z"},.....]}
 
 ```
 
