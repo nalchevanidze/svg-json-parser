@@ -1,12 +1,12 @@
 # svg-json-parser
-Convert SVG to JSON Format. it is useful for React SVG icons.
+Converts SVG to JSON Format. it is useful for React SVG icons.
 
 for use you must create instance of this Class:
 ```html
 svg = new SVGJSONParser();
 ```
 
-to parse SVG use function parse and put inside any SVG Element and it will return javascriptObject;
+to parse SVG use function parse, returns javascriptObject;
 ```html
 var svgobject = svg.parse(document.querySelector('#svglib'));
 ```
