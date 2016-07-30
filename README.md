@@ -10,24 +10,16 @@ var svgParser = new SVGJSONParser();
 ```html
 
 svgParser.parse(document.querySelector('#svglib'));
-// for json 
-svg.json( .....
+
+// for json use: svg.json( .....
 
 ```
-<h5>converted Object</h5>
+<h6>converted Object</h6>
 ```html
 
 {"node":"g",id:work,children:[{node:"path",d:"M10..",fill=".."},.....]}
 
 ```
-
-<h6>for JSON </h6>
-```html
-
-svgParser.json(document.querySelector('#svglib'));
-
-```
-
 
 <h3>Valid elements that will be converterd:</h3>
 ```html
