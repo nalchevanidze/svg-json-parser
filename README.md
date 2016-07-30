@@ -3,16 +3,21 @@ Converts SVG to JSON Format. it is useful for React SVG icons.
 
 for use you must create instance of this Class:
 ```html
-svg = new SVGJSONParser();
+var svg = new SVGJSONParser();
 ```
 
 to parse SVG use function parse, returns javascriptObject;
 ```html
-var svgobject = svg.parse(document.querySelector('#svglib'));
+
+svg.parse(document.querySelector('#svglib'));
+
 ```
 for JSON 
+```html
 
-var svgjson = svg.json(document.querySelector('#svglib'));
+svg.json(document.querySelector('#svglib'));
+
+```
 
 if you use method lib returns;
 ```html
