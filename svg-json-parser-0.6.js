@@ -22,7 +22,7 @@ function SVGJSONParser (){
       var nd = d.nodeName;
       var a= {node:nd}; 
       if(d.id){a.id = d.id};
-      attrs = ['fill',"stroke",'stroke-width'];
+      var attrs = ['fill',"stroke",'stroke-width'];
       if(shapes[nd]){attrs = attrs.concat(shapes[nd]);}
       attrList(a,d,attrs);
       if(d.childNodes.length){a.children=[];[].forEach.call(d.childNodes,checknode);}
