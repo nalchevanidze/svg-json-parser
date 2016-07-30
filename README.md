@@ -15,19 +15,14 @@ var svgjson = svg.json(document.querySelector('#svglib'));
 
 if you use method lib returns;
 ```html
-<h2>Example of code</h2>
-
-"<svg id="svglib" >
+<svg id="svglib" >
 <g id="work">
   <path d="M10 10h20v20H10V10zm30" />
   <path d="M10 10h20v20H10V10zm30" />
 </g>
 <path id="gmail" d="M10 10h20v20H10V10zm30"/>
 <path id="mobile" d="M10 10h20v20H10V10zm30"/>
-</svg>"
-
-
-
+</svg>
 
 var svgjson = svg.lib(document.querySelector('#svglib'));
 {
@@ -38,7 +33,4 @@ var svgjson = svg.lib(document.querySelector('#svglib'));
 "gmail":{"node":"path","id":"gmail","d":"M10 10h20v20H10V10z"},
 "mobile":{"node":"path","id":"mobile","d":"M10 10h20v20H10V10z"}
 }
-
-
 ```
-
