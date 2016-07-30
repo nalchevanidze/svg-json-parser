@@ -70,7 +70,7 @@ var  svglib = svgParser.lib(document.querySelector('#svglib'));
   },.....
 }
 ```
-you can use lib object in react:
+<h6>you can use lib object in react:</h6>
 
 ```html
 
