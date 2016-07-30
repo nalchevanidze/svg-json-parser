@@ -14,7 +14,7 @@ for JSON
 var svgjson = svg.json(document.querySelector('#svglib'));
 
 if you use method lib returns;
-
+<PRE>
 <svg id="svglib" >
 <g id="work">
   <path d="M10 10h20v20H10V10zm30" />
@@ -23,6 +23,7 @@ if you use method lib returns;
 <path id="gmail" d="M10 10h20v20H10V10zm30"/>
 <path id="mobile" d="M10 10h20v20H10V10zm30"/>
 </svg>
+
 
 var svgjson = svg.lib(document.querySelector('#svglib'));
 {
@@ -33,3 +34,5 @@ var svgjson = svg.lib(document.querySelector('#svglib'));
 "gmail":{"node":"path","id":"gmail","d":"M10 10h20v20H10V10z"},
 "mobile":{"node":"path","id":"mobile","d":"M10 10h20v20H10V10z"}
 }
+
+<PRE>
