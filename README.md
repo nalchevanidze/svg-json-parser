@@ -6,7 +6,7 @@ for use you must create instance of this Class:
 var svgParser = new SVGJSONParser();
 ```
 
-to parse SVG use function parse, returns javascriptObject;
+<h4> to parse SVG: </h4>
 ```html
 
 svgParser.parse(document.querySelector('#svglib'));
