@@ -84,7 +84,7 @@ var Icon = React.createClass({render(){
     </g>
   );}
   else if(s.node=="path"){return(
-    <path  d={s.d} fill={s.fill}></path>
+    <path  d={s.d} fill={s.fill} ></path>
   );}
 }});
 
