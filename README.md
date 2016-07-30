@@ -37,7 +37,9 @@ Shape: <circle>, <ellipse>, <line>, <path>, <polygon>, <polyline>, <rect>
 Structural: <defs>, <g>, <svg>, <symbol>,<svg>
 
 ```
-lib method returns svg elements not as Array as propertys of main object, will be included only this element that has id's;
+<h6>lib method </h6> 
+
+returns SVG elements as the properties of the object, will be included only elements with ID attribute; only direct children need id Attributes. and can be passed only: SVG or SVG "defs" element.
 
 ```html
 <svg id="svglib">
