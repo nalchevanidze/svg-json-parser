@@ -17,6 +17,8 @@ if you use method lib returns;
 <PRE>
 <code>
 
+<h1> hello </h1>
+
 "<svg id="svglib" >
 <g id="work">
   <path d="M10 10h20v20H10V10zm30" />
