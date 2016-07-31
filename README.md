@@ -74,20 +74,20 @@ var  svglib = svgParser.lib(document.querySelector('#svglib'));
 
 ```html
 
-var Icon = React.createClass({render(){
-  var s = svglib[this.props.id];
-  if(s.node=="g"){return (
-    <g >
-      {sv.children.map((e,i)=>
-        <path  d={e.d} fill={e.fill} key={i} ></path>
-      )}
-    </g>
-  );}
-  else if(s.node=="path"){return(
-    <path  d={s.d} fill={s.fill} ></path>
-  );}
-}});
+class Icon extends React.Component {
+  render(){
+    var s = svglib[this.props.id];
+    if(s.node=="g"){return (
+      <g >{sv.children.map((e,i)=>
+        <path  d={e.d} fill={e.fill} key={i} ></path>)}
+      </g>
+    );}
+    else if(s.node=="path"){return (
+      <path  d={s.d} fill={s.fill} ></path>
+    );}
+  }  
+}
 
-<icon id='work' />
+<Icon id='work' />
 
 ```
