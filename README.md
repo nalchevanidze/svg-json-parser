@@ -7,6 +7,16 @@ this App Converts SVG Element to JSON Object. it is useful for React.
 var svgParser = new SVGJSONParser();
 ```
 
+<h6>  node.js </h6>
+
+```html
+
+npm install svg-json-parser;
+
+var svgParser = require("svg-json-parser");
+
+```
+
 <h6> to parse SVG: </h6>
 ```html
 
