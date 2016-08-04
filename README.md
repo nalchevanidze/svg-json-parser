@@ -4,8 +4,10 @@ this App Converts SVG Element to JSON Object. it is useful for React.
 
 <h6>Create instance of this Class:</h6>
 
-<span class='variable' >var</span> svgParser = new SVGJSONParser();
+<span class='variable' > var </span>  svgParser = new SVGJSONParser();
+
 svgParser.parse(document.querySelector('#svglib'));
+
 // for json use: svgParser.json( .....
 
 
