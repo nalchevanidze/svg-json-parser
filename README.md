@@ -1,6 +1,6 @@
 # svg-json-parser
 
-this App Converts SVG Element to JSON Object. it is useful for React.
+this App Converts SVG Element to JSON Object. but only in browser.
 
 <h6>Create instance of this Class:</h6>
 ```html
