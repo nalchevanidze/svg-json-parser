@@ -9,7 +9,7 @@ npm install svg-json-parser;
 
 var svgParser = require("svg-json-parser");
 
-app.json.lib('lib.svg','Output file path Without .json');
+app.json.file('lib.svg','Output file path Without .json');
 ```
 
 <h6>converted Object</h6>
@@ -40,7 +40,7 @@ returns SVG elements as the properties of the object, will be included only elem
     .......
 </svg>
 
-var  svglib = svgParser.json.lib();
+var  svglib = svgParser.json.lib('lib.svg','Output file path Without .json');
 {
   work:{
     node:"g",
