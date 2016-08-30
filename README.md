@@ -1,17 +1,7 @@
 # svg-json-parser
 
-this App Converts SVG Element to JSON Object. but only in browser.
+this App Converts SVG Element to JSON.
 
-<h6>Create instance of this Class:</h6>
-```html
-var  svgParser = new SVGJSONParser();
-
-svgParser.parse(document.querySelector('#svglib'));
-
-// for json use: svgParser.json( .....
-```
-
-<h6>  node.js </h6>
 
 ```html
 
@@ -19,8 +9,7 @@ npm install svg-json-parser;
 
 var svgParser = require("svg-json-parser");
 
-svgParser.parse(document.querySelector('#svglib'));
-
+app.json.lib('lib.svg','Output file path Without .json');
 ```
 
 <h6>converted Object</h6>
@@ -29,28 +18,19 @@ svgParser.parse(document.querySelector('#svglib'));
 {
   node:"svg",
   id:"svglib",
-  children:[ 
-    {"node":"g",id:apple,children:[{node:"path",d:"M10..",fill="red"},.....]},
-    {"node":"path",id:orange,fill="#FF3456"}},
+  children:[
+    {"node":"g",id:apple,children:[{node:"path",attr:{d:"M10..",fill="red"}},.....]},
+    {"node":"path",id:orange,attr:{fill="#FF3456"}},
     .....
   ]
 }
 ```
-
-<h6>Valid elements:</h6>
-```html
-
-Shape: <circle>, <ellipse>, <line>, <path>, <polygon>, <polyline>, <rect>
-
-Structural: <defs>, <g>, <svg>, <symbol>,<svg>
-
-```
-<h6>lib method </h6> 
+<h6>lib method </h6>
 
 returns SVG elements as the properties of the object, will be included only elements with ID attribute; only direct children need id Attributes. and can be passed only: SVG or SVG "defs" element.
 
 ```html
-<svg id="svglib">
+<svg>
   // it not, no id  <path  d="M0..." />
     <g id="work">
         <path d="M0..." />
@@ -60,21 +40,20 @@ returns SVG elements as the properties of the object, will be included only elem
     .......
 </svg>
 
-var  svglib = svgParser.lib(document.querySelector('#svglib'));
-
-{  
-  work:{  
+var  svglib = svgParser.json.lib();
+{
+  work:{
     node:"g",
     id:"work",
-    children:[  
-      {"node":"path","d":"M0..."},
-      {"node":"path","d":"M0..."}
+    children:[
+      {"node":"path",attr{"d":"M0..."}},
+      {"node":"path",attr{"d":"M0..."}}
     ]
   },
-  gmail:{  
+  gmail:{
     node:"path",
     id:"gmail",
-    d:"M10..."
+    attr{"d":"M0..."}}
   },.....
 }
 ```
@@ -87,7 +66,7 @@ class Icon extends React.Component {
     var s = svglib[this.props.id];
     if(s.node=="g"){return (<g >{sv.children.map((e,i)=><path  d={e.d} fill={e.fill} key={i} ></path>)}</g>);}
     else if(s.node=="path"){return (<path  d={s.d} fill={s.fill} ></path>);}
-  }  
+  }
 }
 
 <Icon id='work' />
