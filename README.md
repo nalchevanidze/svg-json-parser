@@ -7,7 +7,7 @@ this App Converts SVG Element to JSON.
 
 npm install svg-json-parser;
 
-var svgParser = require("svg-json-parser");
+var app = require("svg-json-parser");
 
 app.json.file('lib.svg','Output file path Without .json');
 ```
