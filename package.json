@@ -1,10 +1,18 @@
 {
   "name": "svg-json-parser",
-  "version": "0.6.3",
+  "version": "0.6.8",
   "description": "converting SVG Elements to JSON Object",
   "main": "index.js",
-  "scripts": {  "test": "echo \"Error: no test specified\" && exit 1"},
-  "keywords": [  "svg-json-parser"],
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "svg-json-parser"
+  ],
   "author": "David Nalchevnidze <d.nalchevanidze@gmail.com> (http://nalchevanidze.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "jest-cli": "^19.0.2"
+  }
 }
