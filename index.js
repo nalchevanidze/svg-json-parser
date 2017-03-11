@@ -13,10 +13,10 @@ function ToSVGLib(e) {
 function parseLib(e) {
     return ToSVGLib(parser(e));
 }
-var app = {
+
+module.exports = {
     load: SVGLoader,
     json: jsonSaver,
     parse: parser,
     parseLib: parseLib
 };
-module.exports = app;
