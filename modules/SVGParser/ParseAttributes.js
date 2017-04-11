@@ -13,9 +13,9 @@ function filterSVGAttributes(list){
   });
 }
 
-function sortAttrubutes(rowAttrList){
+function sortAttrubutes( rowAttrList){
 
-  return rowAttrList.map(function defineValues (attr){
+  return (rowAttrList || []).map(function defineValues (attr){
     var inn = attr.split('="');
     return {
       name: inn[0],

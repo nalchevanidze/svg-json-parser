@@ -12,14 +12,15 @@ function setAttributes(object, markup) {
 }
 
 
-module.exports = function BuildElement(eleMarkup, parent) {
+module.exports = function BuildElement( elementblueprint , parent ) {
+
+  let markup = elementblueprint.text ;
 
     var instance = {
-        tag: eleMarkup.match(/^\w+/)[0],
+        tag: markup.match(/^\w+/)[0],
         toParent: function (){  return parent; }
     };
-    setAttributes(instance, eleMarkup);
-
+    setAttributes( instance, markup );
     parent.children = parent.children || [];
     parent.children.push(instance);
 

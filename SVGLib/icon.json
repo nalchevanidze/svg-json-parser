@@ -27,6 +27,15 @@
         "stroke_miterlimit": "10",
         "d": "M73,87.313v-20\r\n\t M63,77.313h20"
       }
+    },
+    {
+      "tag": "g",
+      "children": [
+        {
+          "tag": "text",
+          "children": "hello"
+        }
+      ]
     }
   ]
 }

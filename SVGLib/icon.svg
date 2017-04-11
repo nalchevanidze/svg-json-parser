@@ -7,4 +7,10 @@
 	c0-1.104-0.896-2-2-2H19.642c-1.104,0-2,0.896-2,2v72.242c0,1.104,0.896,2,2,2h26.81"/>
 <path fill-opacity="0" stroke="#231F20" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M73,87.313v-20
 	 M63,77.313h20"/>
+	 <g>
+		 <text>
+			 hello
+		 </text>
+	 </g>
+
 </svg>
