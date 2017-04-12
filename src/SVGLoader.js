@@ -1,6 +1,6 @@
-var parser = require("./SVGParser");
+import parser from "./SVGParser";
+import fs from 'fs';
 
-const fs = require('fs');
 function ToSVGLib(e) {
     var a = {};
     e.children.forEach((e) => {

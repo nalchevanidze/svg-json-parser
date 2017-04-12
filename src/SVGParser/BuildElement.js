@@ -1,4 +1,4 @@
-const ParseAttributes = require("./ParseAttributes");
+import ParseAttributes from "./ParseAttributes";
 
 function setAttributes(object, markup) {
     var attr = ParseAttributes( markup , object.tag );
@@ -12,10 +12,8 @@ function setAttributes(object, markup) {
 }
 
 
-module.exports = function BuildElement( elementblueprint , parent ) {
-
+export default function BuildElement( elementblueprint , parent ) {
   let markup = elementblueprint.text ;
-
     var instance = {
         tag: markup.match(/^\w+/)[0],
         toParent: function (){  return parent; }
@@ -23,6 +21,5 @@ module.exports = function BuildElement( elementblueprint , parent ) {
     setAttributes( instance, markup );
     parent.children = parent.children || [];
     parent.children.push(instance);
-
     return instance;
 }

@@ -1,9 +1,11 @@
-const BuildElement =require("./BuildElement");
+import BuildElement from "./BuildElement";
+
 const stage = {
         tag: 'main',
         children: [],
         p: null
 };
+
 let current = stage;
 
 const ElementManager =  {
@@ -13,21 +15,18 @@ const ElementManager =  {
   openTag (object){
         current  = BuildElement( object , current );
   },
-  closeTag(object){
-         if(object.tag !== current.tag)  throw new Errow ( " tag is not equal to ; "+ object.text );
+  closeTag({tag,children}){
+         if(tag !== current.tag)  throw new Errow ( " tag is not equal to ; "+ object.text );
 
-         if( object.tag === "text" && object.children){
-           console.log(object);
-           if( typeof object.children === "string"){
-             current.children = object.children ;
-             console.log(object);
+         if( tag === "text" && children){
+           if( typeof children === "string"){
+             current.children = children ;
            }else {
              throw new Error("text element input must be String");
            }
          }
+
          current  = current.toParent();
-
-
   },
   currentTag(){
     return current.tag;
