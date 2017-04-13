@@ -1,19 +1,22 @@
-import ElementManager from "./ElementManager";
+import { start , add , getFinalElement} from "./ElementManager";
 import FilterMatchedRegex from "./FilterMatchedRegex";
 import IsTextElement from "./IsTextElement";
 
 export default function FindSVGTags (markup) {
-    var regex = /\<\/?\w+[^<>]*>/g
-    var found = null;
+
+    start();
+    
+    let regex = /\<\/?\w+[^<>]*>/g
+    let found = null;
      do {
        found = regex.exec(markup);
        if(found){
          let tag = found[0];
          let element = FilterMatchedRegex(tag);
          IsTextElement(element, markup , found );
-         ElementManager.add(element);
+         add(element);
        }
      } while(found)
-
-    return ElementManager.getFinalElement();
+     
+    return getFinalElement();
 }

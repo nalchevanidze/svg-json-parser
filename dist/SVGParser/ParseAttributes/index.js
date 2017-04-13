@@ -4,7 +4,6 @@ function findAttrubutes(svgMarkup, tagName) {
   var list = svgMarkup.match(/\S+=\"[^\"]+/g);
   list = sortAttrubutes(list);
   if (tagName === "svg") {
-    console.log(tagName);
     list = filterSVGAttributes(list);
   }
   return list;

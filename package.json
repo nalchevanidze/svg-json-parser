@@ -1,6 +1,6 @@
 {
   "name": "svg-json-parser",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "converting SVG Elements to JSON Object",
   "main": "index.js",
   "scripts": {

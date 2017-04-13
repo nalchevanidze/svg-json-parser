@@ -1,11 +1,11 @@
 
 const parser = require("./index");
+const fs = require('fs');
 
+ var folder = parser.load.folder("icons");
 
-var svg = parser.load.file('./SVGLib/icon.svg');
-
-svg = JSON.parse(JSON.stringify(svg));
-
- parser.json.file('./SVGLib/icon.svg','./SVGLib/icon');
-
-console.log(svg);
+ fs.writeFile("icons.json", JSON.stringify(folder, null, 2), function(err) {
+        if (err) {
+            return console.log(err);
+        };
+});

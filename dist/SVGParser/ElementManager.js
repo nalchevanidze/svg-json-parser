@@ -6,15 +6,18 @@ var _BuildElement2 = _interopRequireDefault(_BuildElement);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var stage = {
-  tag: 'main',
-  children: [],
-  p: null
-};
-
-var current = stage;
+var stage = void 0,
+    current = void 0;
 
 var ElementManager = {
+  start: function start() {
+    stage = {
+      tag: 'main',
+      children: [],
+      p: null
+    };
+    current = stage;
+  },
   getFinalElement: function getFinalElement() {
     return stage.children[0];
   },

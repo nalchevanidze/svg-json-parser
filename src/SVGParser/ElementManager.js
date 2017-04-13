@@ -1,14 +1,16 @@
 import BuildElement from "./BuildElement";
 
-const stage = {
+let stage ,current;
+
+const ElementManager =  {
+  start(){
+    stage = {
         tag: 'main',
         children: [],
         p: null
-};
-
-let current = stage;
-
-const ElementManager =  {
+    };
+    current = stage;
+  },
   getFinalElement (){
     return stage.children[0];
   },

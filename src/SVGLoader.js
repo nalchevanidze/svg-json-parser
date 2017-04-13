@@ -1,18 +1,7 @@
-import parser from "./SVGParser";
+import LoadFile from "./Loaders/LoadFile.js";
 import fs from 'fs';
 
-function ToSVGLib(e) {
-    var a = {};
-    e.children.forEach((e) => {
-        if (e.id) {
-            a[e.id] = e;
-        }
-    });
-    return a;
-}
-function LoadFile(url, callback) {
-    return parser(fs.readFileSync(url, 'utf8'));
-}
+
 function LoadFolder(url, callback) {
     var data = {};
     var list = fs.readdirSync('./' + url).filter((n) => {
@@ -24,11 +13,8 @@ function LoadFolder(url, callback) {
     })
     return data;
 }
-function LoadLib(url, callback) {
-    return ToSVGLib(LoadFile(url));
-}
+
 module.exports = {
     file: LoadFile,
     folder: LoadFolder,
-    lib: LoadLib
 }
